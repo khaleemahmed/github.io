@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KHALEEM AHMED – IT Engineer</title>
+    <meta name="description" content="KHALEEM AHMED — IT Engineer with 13+ years experience. Specialist in Windows Server, Cisco Networking, Fiber Optic, Server Rack Installation, and IT Infrastructure." />
+    <meta name="keywords" content="KHALEEM AHMED, IT Engineer, Windows Server, Cisco, Fiber Optic, MCP, MCSA, Network Engineer, Server Rack, IT Support" />
+    <meta property="og:title" content="KHALEEM AHMED – IT Engineer" />
+    <meta property="og:description" content="IT Engineer with 13+ years experience — Windows Server, Cisco Networking, Fiber Optics, VMware, and more. Based in Dammam, Saudi Arabia." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/mnt/data/file.jpg" />
+    <link rel="canonical" href="https://kaleemahmed.github.io/" />
+    <meta name="robots" content="index, follow" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            transition: background 0.4s ease, color 0.4s ease;
+            --bg: #fffbf2;
+            --text: #2a2a2a;
+            --card: #ffffff;
+            --accent: #ff6f61;
+            --accent2: #ff9f43;
+            --accent3: #1dd1a1;
+        }
+        body.dark {
+            --bg: #121212;
+            --text: #eeeeee;
+            --card: #1f1f1f;
+            --accent: #ff6f61;
+            --accent2: #ffa94d;
+            --accent3: #10ac84;
+        }
+        body.dark {
+            --bg: #1a1a1a;
+            --text: #f0f0f0;
+            --card: #222;
+            --accent: #4c8dff;
+        }
+        header {
+            background: var(--accent);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            animation: fadeIn 1.2s ease;
+        }
+        @keyframes fadeIn {
+            from {opacity: 0; transform: translateY(-20px);} to {opacity: 1; transform: translateY(0);}
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            font-weight: 600;
+        }
+        header p {
+            font-size: 1.3rem;
+            opacity: 0.9;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+            margin-top: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+        section {
+            max-width: 950px;
+            margin: auto;
+            background: var(--card);
+            padding: 35px;
+            box-shadow: 0 0 12px rgba(0,0,0,0.1);
+            margin-top: 35px;
+            border-radius: 14px;
+            animation: fadeIn 1.2s ease;
+        }
+        h2 {
+            color: var(--accent);
+            font-weight: 600;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            background: var(--accent);
+            color: white;
+        }
+        .toggle-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+    </style>
+<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+<style>
+/* Neon Theme Colors */
+:root {
+  --neon1: #ff00ff;
+  --neon2: #00eaff;
+  --neon3: #39ff14;
+  --neon-bg: #0a0a0a;
+}
+body.neon {
+  background: var(--neon-bg);
+  color: white;
+}
+.neon-glow { text-shadow: none !important; color: var(--text) !important; }
+section.neon-card {
+  border: 2px solid var(--neon2);
+  box-shadow: 0 0 15px var(--neon2);
+  background: rgba(255,255,255,0.05);
+}
+/* Scroll animations */
+.fade-in {opacity:0; transform:translateY(20px); transition:0.8s ease;}
+.fade-in.visible {opacity:1; transform:translateY(0);}
+</style>
+<script>
+window.addEventListener('scroll',()=>{
+ document.querySelectorAll('.fade-in').forEach(el=>{
+  const rect=el.getBoundingClientRect();
+  if(rect.top<window.innerHeight-100){el.classList.add('visible');}
+ });
+});
+</script>
+<style>
+/* Floating Neon Icons */
+.floating-icon {position: absolute; width:40px; opacity:0.7; animation: floatIcon 6s infinite ease-in-out;}
+@keyframes floatIcon {0%{transform:translateY(0);}50%{transform:translateY(-20px);}100%{transform:translateY(0);}}
+
+/* Neon Border Animation */
+#hero { display:flex; flex-direction:column; align-items:center; gap:20px;.neon-border {border:4px solid var(--neon2); box-shadow:0 0 25px var(--neon2); animation: borderPulse 2s infinite ease-in-out;}
+@keyframes borderPulse {0%{box-shadow:0 0 10px var(--neon2);}50%{box-shadow:0 0 30px var(--neon1);}100%{box-shadow:0 0 10px var(--neon2);}}
+
+/* WhatsApp Chat Bubble */
+#whatsapp-btn {position:fixed; bottom:25px; right:25px; background:#25D366; color:white; padding:14px 18px; border-radius:50%; font-size:24px; box-shadow:0 0 12px #25D366; z-index:999;}
+
+/* Translator */
+#lang-btn {position:fixed; bottom:25px; left:25px; background:var(--neon3); color:black; padding:10px 14px; border-radius:8px; cursor:pointer;}
+
+/* Stats Counters */
+.counter-box {text-align:center; padding:20px; border-radius:12px; background:rgba(255,255,255,0.06); border:2px solid var(--neon1); box-shadow:0 0 15px var(--neon1);} 
+.counter-number {font-size:2.5rem; font-weight:700;} 
+
+/* Project Gallery */
+.project-item {width:280px; border-radius:14px; overflow:hidden; border:2px solid var(--neon2); box-shadow:0 0 12px var(--neon2); transition:0.3s;} 
+.project-item:hover {transform:scale(1.05); box-shadow:0 0 20px var(--neon1);} 
+</style>
+<script>
+function toggleLang(){document.body.classList.toggle('arabic');}
+
+// Animated counters
+window.addEventListener('scroll',()=>{
+ document.querySelectorAll('.counter-number').forEach(counter=>{
+  const rect=counter.getBoundingClientRect();
+  if(rect.top<window.innerHeight && !counter.started){
+    counter.started=true;
+    let value=0; const target=parseInt(counter.dataset.target);
+    const step=target/60;
+    const interval=setInterval(()=>{
+      value+=step; counter.innerText=Math.floor(value);
+      if(value>=target){counter.innerText=target; clearInterval(interval);} },30);
+  }
+ });
+});
+</script>
+</head>
+</head>
+<body>
+    <!-- Hero Section -->
+    
+
+    <!-- Animation Styles -->
+    <style>
+        @keyframes gradientMove {
+            0% {background-position:0% 50%;}
+            50% {background-position:100% 50%;}
+            100% {background-position:0% 50%;}
+        }
+        @keyframes float {
+            0% {transform: translateY(0px);} 
+            50% {transform: translateY(-10px);} 
+            100% {transform: translateY(0px);} 
+        }
+    </style>
+    <header style="background: linear-gradient(135deg, var(--accent), var(--accent2), var(--accent3)); padding: 70px 20px; text-align:center; color:white; animation: fadeIn 1.5s ease;">
+        <h1 style="font-size:3.5rem; font-weight:700;">KHALEEM AHMED</h1>
+        <p style="font-size:1.4rem; opacity:0.95;">IT Engineer • MCP • MCSA • 13+ Years Experience</p>
+        <button class="toggle-btn" onclick="toggleTheme()" style="margin-top:20px;">🌙 Theme</button>
+    </header>
+
+<!-- Contact Number Added -->
+<div style="text-align:center; margin-top:10px; font-size:1.3rem; font-weight:600;">
+
+</div>
+
+    <div style="text-align:center; margin-top:-40px;">
+        <img src="D:\My Data\Picture\file.jpg" class="profile-pic" style="width:180px; height:180px; border-radius:50%; border:4px solid var(--neon2); box-shadow:0 0 20px var(--neon1); transition:0.4s; display:block; margin:0 auto;" onmouseover="this.style.transform='rotate(5deg) scale(1.05)'" onmouseout="this.style.transform='rotate(0deg) scale(1)'" />
+    </div>
+
+    <section>
+        <h2>About Me</h2>
+        <p>
+            I am KHALEEM AHMED, an experienced IT Engineer with over 13 years of hands-on expertise. I hold a Diploma in Computer Science Engineering and multiple Microsoft certifications (MCP and MCSA). I specialize in network infrastructure, server installation, configuration, cabling, and IT systems support.
+        </p>
+    </section>
+
+    <section>
+        <h2>Certifications</h2>
+        <ul>
+            <li>Microsoft Certified Professional (MCP)</li>
+            <li>Microsoft Certified Solutions Associate (MCSA)</li>
+            <li>CCNA Knowledge</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Technical Expertise</h2>
+        <ul>
+            <li>Server Rack Installation</li>
+            <li>Fiber Optic Installation</li>
+            <li>Network Cabling & Structured Cabling</li>
+            <li>Switch & Router Configuration</li>
+            <li>Server Installation & Configuration</li>
+            <li>Troubleshooting IT Systems & Networks</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Experience</h2>
+        <p>13 years of experience in IT support, infrastructure setup, and network maintenance for enterprises and organizations.</p>
+    </section>
+
+    <section>
+        <h2>Contact</h2>
+        <p class="contact">📧 Email: engr.kaleem.ahmed@gmail.com</p>
+        <p class="contact">📞 Phone: +966 549 298 059</p>
+    </section>
+
+    <footer>
+        © 2025 KHALEEM AHMED – IT Engineer
+    </footer>
+
+<!-- Services Section (Neon) -->
+<section class="neon-card fade-in" id="services" style="padding:40px; border-radius:14px; margin-top:40px;">
+<h2 class="neon-glow" style="text-align:center;">IT Services</h2>
+<div style="display:flex; flex-wrap:wrap; gap:20px; justify-content:center; margin-top:20px;">
+ <div class="neon-card" style="padding:20px; width:260px; border-radius:12px;">
+   <h3 class="neon-glow">Network Setup</h3>
+   <p>Professional setup of Cisco & Huawei networks with high‑security configurations.</p>
+ </div>
+ <div class="neon-card" style="padding:20px; width:260px; border-radius:12px;">
+   <h3 class="neon-glow">Server Installation</h3>
+   <p>Windows Server installation, AD, DNS, DHCP, GPO and full environment deployment.</p>
+ </div>
+ <div class="neon-card" style="padding:20px; width:260px; border-radius:12px;">
+   <h3 class="neon-glow">Fiber Optic Services</h3>
+   <p>FTTH, splicing, OTDR testing and full fiber infrastructure installation.</p>
+ </div>
+ <div class="neon-card" style="padding:20px; width:260px; border-radius:12px;">
+   <h3 class="neon-glow">CCTV & Security</h3>
+   <p>IP/Analog CCTV setup (Hikvision, Dahua), monitoring & configuration.</p>
+ </div>
+</div>
+</section>
+
+<!-- Skill Progress Bars -->
+<section id="skills">
+    <h2>Skills</h2>
+    <div style="max-width:700px; margin:auto;">
+        <div style="margin-bottom:12px;">
+            <div style="display:flex; justify-content:space-between;"><strong>Windows Server</strong><span>95%</span></div>
+            <div style="background:#e6eefb; height:12px; border-radius:8px; overflow:hidden;"><div style="width:95%; height:100%; background:linear-gradient(90deg,#0b3d91,#4c8dff);"></div></div>
+        </div>
+        <div style="margin-bottom:12px;">
+            <div style="display:flex; justify-content:space-between;"><strong>Cisco Networking</strong><span>90%</span></div>
+            <div style="background:#e6eefb; height:12px; border-radius:8px; overflow:hidden;"><div style="width:90%; height:100%; background:linear-gradient(90deg,#0b3d91,#4c8dff);"></div></div>
+        </div>
+        <div style="margin-bottom:12px;">
+            <div style="display:flex; justify-content:space-between;"><strong>Fiber Optics</strong><span>92%</span></div>
+            <div style="background:#e6eefb; height:12px; border-radius:8px; overflow:hidden;"><div style="width:92%; height:100%; background:linear-gradient(90deg,#0b3d91,#4c8dff);"></div></div>
+        </div>
+        <div style="margin-bottom:12px;">
+            <div style="display:flex; justify-content:space-between;"><strong>VMware / Hyper-V</strong><span>88%</span></div>
+            <div style="background:#e6eefb; height:12px; border-radius:8px; overflow:hidden;"><div style="width:88%; height:100%; background:linear-gradient(90deg,#0b3d91,#4c8dff);"></div></div>
+        </div>
+    </div>
+</section>
+
+<!-- Experience Timeline -->
+<section id="experience-timeline">
+    <h2>Experience Timeline</h2>
+    <div style="position:relative; max-width:900px; margin:auto; padding:20px 0;">
+        <div style="position:absolute; left:50%; top:0; width:4px; height:100%; background:linear-gradient(#0b3d91,#4c8dff); transform:translateX(-50%);"></div>
+
+        <!-- Item 1 -->
+        <div style="position:relative; width:45%; padding:20px; box-sizing:border-box;">
+            <div style="background:var(--card); padding:16px; border-radius:10px; box-shadow:0 6px 18px rgba(0,0,0,0.06); animation: slideInLeft 0.8s ease;"><h3>IT Support Engineer</h3><p>Qudrat National Commercial Services — 2024–Present (Dammam, KSA)</p></div>
+        </div>
+
+        <!-- Item 2 -->
+        <div style="position:relative; left:55%; width:45%; padding:20px; box-sizing:border-box; margin-top:-120px;">
+            <div style="background:var(--card); padding:16px; border-radius:10px; box-shadow:0 6px 18px rgba(0,0,0,0.06); animation: slideInRight 0.8s ease;"><h3>IT Trainer</h3><p>Prabuddha Mitra Education Trust — 2017–2024 (Gulbarga, India)</p></div>
+        </div>
+
+        <!-- Item 3 -->
+        <div style="position:relative; width:45%; padding:20px; box-sizing:border-box; margin-top:-40px;">
+            <div style="background:var(--card); padding:16px; border-radius:10px; box-shadow:0 6px 18px rgba(0,0,0,0.06); animation: slideInLeft 0.8s ease;"><h3>IT Engineer</h3><p>Tareg Al Jaafari Contracting Co. — 2015–2017 (Dammam, KSA)</p></div>
+        </div>
+
+        <!-- Item 4 -->
+        <div style="position:relative; left:55%; width:45%; padding:20px; box-sizing:border-box; margin-top:-120px;">
+            <div style="background:var(--card); padding:16px; border-radius:10px; box-shadow:0 6px 18px rgba(0,0,0,0.06); animation: slideInRight 0.8s ease;"><h3>Hardware & Networking Engineer</h3><p>Abdul Rahman Al Otaishan Group — 2011–2014 (Dammam, KSA)</p></div>
+        </div>
+
+        <!-- Item 5 -->
+        <div style="position:relative; width:45%; padding:20px; box-sizing:border-box; margin-top:-40px;">
+            <div style="background:var(--card); padding:16px; border-radius:10px; box-shadow:0 6px 18px rgba(0,0,0,0.06); animation: slideInLeft 0.8s ease;"><h3>Desktop Support Engineer</h3><p>New Horizon (Falcon Technologies) — 2009–2011 (Gulbarga, India)</p></div>
+        </div>
+    </div>
+
+    <style>
+        @keyframes slideInLeft {from {opacity:0; transform:translateX(-30px);} to {opacity:1; transform:translateX(0);}}
+        @keyframes slideInRight {from {opacity:0; transform:translateX(30px);} to {opacity:1; transform:translateX(0);}}
+    </style>
+</section>
+
+
+
+<!-- Portfolio Section -->
+<section id="portfolio">
+    <h2>Portfolio / Projects</h2>
+    <ul>
+        <li>Enterprise Network Setup (Cisco/Huawei)</li>
+        <li>Server Rack & Datacenter Installations</li>
+        <li>Fiber Optic FTTH Deployment & Splicing</li>
+        <li>Windows Server AD/DC, DHCP, DNS Projects</li>
+        <li>CCTV IP/Analog Security Installations</li>
+    </ul>
+</section>
+
+<!-- Contact Form -->
+<section id="contact" class="fade-in" style="margin-top:40px; text-align:center;">
+  <div style="max-width:400px; margin:0 auto; padding:25px; border:2px solid var(--neon2); border-radius:14px; box-shadow:0 0 20px var(--neon2); background:rgba(255,255,255,0.06);">
+    <h2 class="neon-glow">Contact</h2>
+
+    <!-- Clickable Email with Icon -->
+    <p style="font-size:1.2rem; margin:15px 0;">
+      📧 <a href="mailto:engr.kaleem.ahmed@gmail.com" style="color:var(--neon2); text-decoration:none; font-weight:600;">engr.kaleem.ahmed@gmail.com</a>
+    </p>
+
+    <!-- Clickable Phone with Icon -->
+    <p style="font-size:1.2rem; margin:15px 0;">
+      📞 <a href="tel:+917975247113" style="color:var(--neon3); text-decoration:none; font-weight:600;">+966 549 298 059</a>
+    </p>
+
+    <!-- WhatsApp Quick Chat Button -->
+    <a href="https://wa.me/966549298059" target="_blank" style="display:inline-block; margin-top:15px; background:#25D366; padding:12px 20px; border-radius:8px; color:white; font-size:1.1rem; font-weight:600; box-shadow:0 0 12px #25D366; text-decoration:none;">
+      💬 <a href="https://wa.me/917975247113" target="_blank" style="display:inline-block; margin-top:15px; background:#25D366; padding:12px 20px; border-radius:8px; color:white; font-size:1.1rem; font-weight:600; box-shadow:0 0 12px #25D366; text-decoration:none;">WhatsApp Chat (+91 7975247113)</a>
+  </div>
+</section>
+    <section>
+        <h2>Professional Summary</h2>
+        <p>IT Professional with strong System Administration and Networking background. Experienced in servers, networking, troubleshooting, virtualization, and maintaining high availability of IT systems. Skilled across Windows and network environments. Fluent in multiple languages.</p>
+    </section>
+
+    <section>
+        <h2>IT Skills</h2>
+        <ul>
+            <li>Windows Server 2008/2012/2016/2019</li>
+            <li>Microsoft Exchange Server 2013</li>
+            <li>Office 365 Administration</li>
+            <li>VMware, VirtualBox, Hyper‑V</li>
+            <li>CCNA, Network+, Hardware+</li>
+            <li>VPN Solutions, TCP/IP, WAN</li>
+            <li>CCTV (Hikvision, Dahua, CP Plus)</li>
+            <li>Cisco, Huawei, TP‑Link Switches & Routers</li>
+            <li>Firewall (Fortinet, Huawei, Check Point)</li>
+            <li>Fiber Optic: Cabling, Splicing, OTDR Testing</li>
+            <li>Avaya Telephone Support</li>
+            <li>Data Recovery</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Work Experience</h2>
+        <h3>IT Support Engineer – Qudrat National Commercial Services (2024 – Present), Dammam, KSA</h3>
+        <ul>
+            <li>Provided technical support ensuring smooth IT operations.</li>
+            <li>Resolved hardware, software, and network issues efficiently.</li>
+            <li>Installed and configured Huawei ONT routers, Aruba APs, and CCTV systems.</li>
+            <li>Handled fiber optic splicing, FTTH network maintenance, and OLT device servicing.</li>
+            <li>Delivered remote technical support via secure channels.</li>
+        </ul>
+
+        <h3>IT Trainer – Prabuddha Mitra Education Trust (2017 – 2024), India</h3>
+        <ul>
+            <li>Prepared training material including presentations and assessments.</li>
+            <li>Trained students in Windows Server, Hardware, and Networking.</li>
+            <li>Conducted installation and configuration training for Windows Server.</li>
+            <li>Developed curriculum and monitored trainee progress.</li>
+        </ul>
+
+        <h3>IT Engineer – Tareg Al Jaafari Contracting Co. (2015 – 2017), Dammam, KSA</h3>
+        <ul>
+            <li>Installed, configured, and troubleshooted Windows Server environments.</li>
+            <li>Configured DNS, Active Directory, DHCP, GPOs.</li>
+            <li>Managed WDS, IIS, SCCM, FTP, and O365 Exchange services.</li>
+            <li>Configured firewalls, VMware, and Hyper‑V environments.</li>
+        </ul>
+
+        <h3>Hardware & Networking Engineer – Al Otaishan Group (2011 – 2014), Dammam, KSA</h3>
+        <ul>
+            <li>Performed system installations, troubleshooting printers, scanners, and LAN systems.</li>
+            <li>Configured network devices including routers, switches, and broadband.</li>
+            <li>Handled data recovery and system backup procedures.</li>
+        </ul>
+
+        <h3>Desktop Support Engineer – New Horizon (2009 – 2011), India</h3>
+        <ul>
+            <li>Troubleshooting hardware, software, and network issues.</li>
+            <li>Provided remote and onsite technical assistance.</li>
+            <li>Maintained documentation of issues and resolutions.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <ul>
+            <li>Diploma in Computer Science & Engineering – Govt. Polytechnic Gulbarga (2006)</li>
+            <li>SSLC – Karnataka State Board (2003)</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Certifications</h2>
+        <ul>
+            <li>MCSA – Certification No: G075‑7060</li>
+            <li>MCP – Certification No: G073‑7081</li>
+            <li>Microsoft Certified ID: 14420187</li>
+        </ul>
+    </section>
+
+    <footer>
+        © 2025 KHALEEM AHMED – IT Engineer
+    </footer>
+<script>
+        feather.replace();
+        function toggleTheme(){
+            document.body.classList.toggle('dark');
+        }
+    </script>
+<!-- Floating Neon Icons -->
+<img src="/mnt/data/file.jpg" class="floating-icon" style="top:120px; left:40px;">
+<img src="/mnt/data/file.jpg" class="floating-icon" style="bottom:120px; right:40px; animation-delay:1s;">
+
+<!-- WhatsApp Chat Bubble -->
+<a id="whatsapp-btn" href="https://wa.me/966532799257" target="_blank">💬</a>
+
+<!-- Language Switcher -->
+<div id="lang-btn" onclick="toggleLang()">🌍 EN / AR</div>
+
+<!-- Statistics Counters -->
+<section id="stats" class="fade-in" style="display:flex; justify-content:center; gap:20px; margin-top:40px;">
+ <div class="counter-box"><div class="counter-number" data-target="13">0</div><p>Years Experience</p></div>
+ <div class="counter-box"><div class="counter-number" data-target="250">0</div><p>Projects Completed</p></div>
+ <div class="counter-box"><div class="counter-number" data-target="150">0</div><p>Clients Supported</p></div>
+</section>
+
+<!-- Project Gallery -->
+
+
+</body>
+</html>
